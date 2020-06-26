@@ -1,0 +1,29 @@
+.nav {
+  margin-right: 5px;
+  grid-area: n;
+  background-color: lightsteelblue;
+}
+
+.nav .item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+.nav .item:hover {
+  background-color: rgb(144, 186, 240);
+  transition: 0.6s;
+}
+
+.nav .line {
+  background-color: black;
+  color: black;
+  height: 2px;
+  margin-top: 10px;
+}
+
+.nav .settings {
+  margin-top: 60px;
+  padding-bottom: 5px;
+}
