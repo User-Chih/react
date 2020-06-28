@@ -5,10 +5,21 @@
   display: grid;
   grid-template-areas:
     "h h"
-    "p n"
-    "f f" ;
+    "c n"
+    "f f";
 
   grid-template-rows: 70px 1fr;
   grid-template-columns: 10fr 2fr;
   background-color: rgba(166, 231, 247, 0.219);
+}
+.app-wrapper-content {
+  color: #54a19f;
+  grid-area: c;
+  background-color: #fffdd0bd;
+  padding-top: 10px;
+  background-image: url(https://i.ibb.co/VQdtDJb/jsxpng.png);
+  background-size: 90%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 15px 15px;
 }
