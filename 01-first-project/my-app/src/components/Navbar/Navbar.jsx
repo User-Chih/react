@@ -1,26 +1,43 @@
 import React from "react";
 import s from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
-    return <nav className={s.nav}>
+    return (
+      <nav className={s.nav}>
         <div className={`${s.profile} ${s.item}`}>
-        <a href="http://">Profile</a>
-    </div>
-        <div className={`${s.messages} ${s.item}`}>
-            <a href="http://">Messages</a>
-    </div>
-        <div className={`${s.news} ${s.item}`}>
-            <a href="http://">News</a>
-    </div>
-        <div className={`${s.music} ${s.item}`}>
-            <a href="http://">Music</a>
+          {/*добавляем activeClassName из-за трансформации классов для стилизации в css*/}
+          <NavLink to="/profile" activeClassName={s.active}>
+            Profile
+          </NavLink>
         </div>
-        <div className={s.line}><span></span></div>
+        <div className={`${s.messages} ${s.item}`}>
+          <NavLink to="/dialogs" activeClassName={s.active}>
+            Messages
+          </NavLink>
+        </div>
+        <div className={`${s.news} ${s.item}`}>
+          <NavLink to="/news" activeClassName={s.active}>
+            News
+          </NavLink>
+        </div>
+        <div className={`${s.music} ${s.item}`}>
+          <NavLink to="/music" activeClassName={s.active}>
+            Music
+          </NavLink>
+        </div>
+        <div className={s.line}>
+          {/*разделяющая линия*/}
+          <span></span>
+        </div>
         <div className={`${s.settings} ${s.item}`}>
-            <a href="http://">Settings</a>
-    </div>
-</nav>
+          <NavLink to="/settings" activeClassName={s.active}>
+            Settings
+          </NavLink>
+        </div>
+      </nav>
+    );
 }
 
 export default Navbar;

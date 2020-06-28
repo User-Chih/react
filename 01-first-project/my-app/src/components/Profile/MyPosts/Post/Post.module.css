@@ -2,8 +2,9 @@
   color: rgb(134, 74, 74);
   background-color: hsl(195, 53%, 79%, 0.95);
   border-radius: 15px 15px 15px 15px;
-  margin: 1px 10px;
+  margin: 5px 10px;
   font-size: 18px;
+  font-family: Arial,sans-serif;
 }
 
 .item img {

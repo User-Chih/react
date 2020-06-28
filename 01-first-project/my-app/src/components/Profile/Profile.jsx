@@ -4,13 +4,11 @@ import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
   return (
-    <div>
-      {" "}
-      {/* <div>
-            <img src="https://i.ibb.co/VQdtDJb/jsxpng.png" alt="" />
-        </div> */}
-      <div className="ava">AVA</div>
-      <MyPosts />
+    <div className={s.profile_wrapper}>
+      <div className={s.profile}>        
+        <div className="ava">AVA</div>
+        <MyPosts />
+      </div>
     </div>
   );
 };

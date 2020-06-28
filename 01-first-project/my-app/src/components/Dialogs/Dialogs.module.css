@@ -1,0 +1,36 @@
+.dialogs{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    color: wheat;
+  background-color: hsla(177, 73%, 34%, 0.5);
+  padding: 10px;
+  border: 1px solid hsla(177, 75%, 25%, 0.5);
+  background-size: 7%;
+  border-radius: 15px;
+}
+
+.dialogs .dialogs_item{
+    color: white;
+    padding: 10px;
+    background-color: hsla(177, 75%, 25%, 55%);
+    border-radius: 15px;
+    margin: 2px;
+}
+.dialogs .dialogs_item .active{
+    color: gold;
+}
+.dialogs .dialogs_item .dialog{
+
+}
+.messages{
+     color: white;
+    padding: 10px;
+   background-color: hsla(177, 75%, 25%, 55%);
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.message{
+
+}

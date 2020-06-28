@@ -13,13 +13,14 @@
   background-color: rgba(166, 231, 247, 0.219);
 }
 .app-wrapper-content {
-  color: #54a19f;
   grid-area: c;
-  background-color: #fffdd0bd;
-  padding-top: 10px;
-  background-image: url(https://i.ibb.co/VQdtDJb/jsxpng.png);
-  background-size: 90%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  border-radius: 15px 15px 15px 15px;
+  color: wheat;
+  background-color: hsla(177, 49%, 48%, 20%);
+  padding: 10px;
+  background-image: url(https://i.ibb.co/m61ZQwv/88216-blue-animation-portal-sprite-point-free-png-hq.png);
+    background-repeat: round;
+  background-blend-mode: soft-light;
+  background-size: 3%;
+  border-radius: 15px;
 }
+

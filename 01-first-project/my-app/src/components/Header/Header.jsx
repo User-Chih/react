@@ -5,13 +5,10 @@ const Header = () => {
   return (
     <header className={s.header}>
       <img
-        className={s.img}
-        src="https://i.ibb.co/r0DMyY7/anime-eyes-and-blush-11550227123oqpu8qjqgc.png"
-        alt=""/>
-      <img
-        className={s.img}
-        src="https://i.ibb.co/Fxwk7gG/jsx-logo.png"
-        alt=""/>
+        className={s.img_logo}
+        src="https://i.ibb.co/wRnDLQQ/4-2-globe-png-file.png"
+        alt=""
+      />
     </header>
   );
 };
