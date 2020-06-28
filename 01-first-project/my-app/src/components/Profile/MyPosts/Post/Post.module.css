@@ -1,10 +1,21 @@
-.item{
-  color: lightcoral;
+.item {
+  color: rgb(134, 74, 74);
+  background-color: hsl(195, 53%, 79%, 0.95);
+  border-radius: 15px 15px 15px 15px;
+  margin: 1px 10px;
+  font-size: 18px;
 }
 
-.item img{
+.item img {
   width: 50px;
   height: 50px;
+  border: lawngreen 0.5px solid;
   border-radius: 30px;
-  background-color: lightcyan;
+  background-color: rgba(224, 255, 255, 0.562);
+  margin: 5px 0px 0px 5px;
+}
+.item .like {
+  margin: 3px 0px 0px 10px;
+  padding-bottom: 5px;
+  font-size: 14px;
 }
