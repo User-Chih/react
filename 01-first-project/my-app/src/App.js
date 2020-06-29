@@ -17,6 +17,7 @@ const App = () => {
         <Header />
         <div className="app-wrapper-content">
           {/*path ведёт в Navbar a href */}
+          {/* Route отвечает за отображение непосредственного UI и следит за тем чтобы пути совпадали между компонентом и адресной строкой. */}
           <Route path="/profile" component={Profile} />
           <Route path="/dialogs" component={Dialogs} />
           <Route path="/music" component={Music} />

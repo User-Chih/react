@@ -1,0 +1,43 @@
+.postBlock {
+  padding: 10px 30px 10px 40px;
+  margin-right: 10px;
+}
+.postBlock .enterPost {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.postBlock .enterButton {
+  background-color: hsla(177, 75%, 25%, 45%);
+    border: 1px solid hsla(177, 75%, 25%, 45%);
+    color: white;
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    border-radius: 15px;
+    margin: 0px 5px 5px 5px;
+}
+.postBlock .enterButton:hover{
+  background-color: hsla(177, 75%, 25%, 65%);
+}
+.postBlock .enterButton:active{
+    border-color:hsla(171, 40%, 90%, 0.884) ;
+}
+
+
+.postBlock .enterText textarea {
+  outline: none;
+  -moz-appearance: none;
+  border: 1px solid rgba(104, 104, 104, 0.555);
+  resize: none;
+  overflow: auto;
+  width: 780px;
+  background-color: hsla(171, 40%, 90%, 0.884);
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  border-radius: 15px;
+  padding: 5px;
+}

@@ -1,8 +1,8 @@
-.dialogs{
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    color: wheat;
+.dialogs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  color: wheat;
   background-color: hsla(177, 73%, 34%, 0.5);
   padding: 10px;
   border: 1px solid hsla(177, 75%, 25%, 0.5);
@@ -10,27 +10,35 @@
   border-radius: 15px;
 }
 
-.dialogs .dialogs_item{
-    color: white;
-    padding: 10px;
-    background-color: hsla(177, 75%, 25%, 55%);
-    border-radius: 15px;
-    margin: 2px;
+.dialogs .dialogsItem {
+  padding: 10px;
+  background-color: hsla(177, 75%, 25%, 55%);
+  border-radius: 15px;
+  margin: 2px;
 }
-.dialogs .dialogs_item .active{
-    color: gold;
+ .dialogs .dialogsItem .dialog a.active {
+   display: block;
+  color: gold;
+  background-color: blue;
+  border-radius: 7px;
+  padding-left: 10px;
+  transition: 0.2s;
 }
-.dialogs .dialogs_item .dialog{
+.dialogs .dialogsItem .dialog {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+}
 
+.dialogs .dialogsItem .dialog a {
+  color: rgb(210, 230, 255);
+  text-decoration: none;
 }
-.messages{
-     color: white;
-    padding: 10px;
-   background-color: hsla(177, 75%, 25%, 55%);
-    border-radius: 15px;
-    margin: 2px;
-}
-
-.message{
-
+.messages {
+  color: white;
+  padding: 10px;
+  background-color: hsla(177, 75%, 25%, 45%);
+  border-radius: 15px;
+  margin: 2px;
+  font-size: 18px;
 }

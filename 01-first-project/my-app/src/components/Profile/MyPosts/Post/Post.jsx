@@ -8,7 +8,7 @@ const Post = (props) => {
         className={s.img}
         src="https://i.ibb.co/r0DMyY7/anime-eyes-and-blush-11550227123oqpu8qjqgc.png"
         alt=""
-      />{" "}
+      />
       {props.messege}
       <div className={s.like}>
         <span>like</span> {props.likesCount}

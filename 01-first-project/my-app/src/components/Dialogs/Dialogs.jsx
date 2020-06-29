@@ -1,20 +1,46 @@
 import React from "react";
 import s from "./Dialogs.module.css";
+import { NavLink } from "react-router-dom";
+
+
+const DialogItem = (props) => {
+  // {/* {конкотинируем строки to и props.id} */}
+  let path = "/dialogs/" + props.id;
+
+  return (
+    <div className={s.dialog + ' ' + s.active}>
+      {/* {Собием путь ссылки, id и имя } */}
+      <NavLink to={path}> {props.name} </NavLink>
+    </div>);
+}
+
+const Message = (props) => {
+  return <div className={s.dialog}>{props.message}</div>;
+}
 
 const Dialogs = (props) => {
   return (
     <div className={s.dialogs}>
-      <div className={s.dialogs_item}>
-        <div className={s.dialog + " " + s.active}>Паша</div>
-        <div className={s.dialog}>Ваня</div>
-        <div className={s.dialog}>Ника</div>
-        <div className={s.dialog}>Саша</div>
-        <div className={s.dialog}>Оля</div>
+      <div className={s.dialogsItem}>
+        {/* {name и id сидят в props} */}
+        <DialogItem name="Паша" id="1" />
+        <DialogItem name="Ника" id="2" />
+        <DialogItem name="Ваня" id="3" />
+        <DialogItem name="Саша" id="4" />
+        <DialogItem name="Оля" id="5" />
+
+        {/* <div className={s.dialog}>
+          <NavLink to="/dialogs/2" id="2">Ника</NavLink>
+          </div> */}
       </div>
       <div className={s.messages}>
-        <div className={s.message}>Hi</div>
-        <div className={s.message}>Hi, Yo</div>
-        <div className={s.message}>Yo</div>
+        <Message message="Hi" />
+        <Message message="Hi, Yo" />
+        <Message message="Hi, Yo" />
+        <Message message="Hi" />
+        <Message message="Yo" />
+        <Message message="Yo" />
+        {/* <div className={s.dialog}>Yo</div> */}
       </div>
     </div>
   );
