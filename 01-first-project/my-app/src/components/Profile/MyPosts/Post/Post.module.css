@@ -5,6 +5,7 @@
   margin-bottom: 5px;
   font-size: 18px;
   font-family: Arial,sans-serif;
+  padding-left: 20px;
 }
 
 .item img {
@@ -13,10 +14,13 @@
   border: lawngreen 0.5px solid;
   border-radius: 30px;
   background-color: rgba(224, 255, 255, 0.562);
-  margin: 5px 0px 0px 5px;
+  margin: 5px 0px 0px -15px;
 }
 .item .like {
-  margin: 3px 0px 0px 10px;
-  padding-bottom: 5px;
+  margin: 10px 10px 10px -15px;
+  padding: 5px;
   font-size: 14px;
+  display: inline-block;
+  border: 1px solid rgb(134, 74, 74);
+  border-radius: 15px;
 }

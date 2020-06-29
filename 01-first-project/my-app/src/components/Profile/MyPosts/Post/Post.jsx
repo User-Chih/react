@@ -9,9 +9,9 @@ const Post = (props) => {
         src="https://i.ibb.co/r0DMyY7/anime-eyes-and-blush-11550227123oqpu8qjqgc.png"
         alt=""
       />
-      {props.messege}
+      <div>{props.message}</div>
       <div className={s.like}>
-        <span>like</span> {props.likesCount}
+        <span>like:</span> {props.likesCount}
       </div>
     </div>
   );
